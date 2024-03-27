@@ -5,11 +5,7 @@ const App = () => {
   return (
     <div>
       <NavBar/>
-<<<<<<< HEAD
       <Hero/>
-=======
-
->>>>>>> 810ee8ae98752848bb3842ca8f80580076bcbcdf
     </div>
   )
 }
