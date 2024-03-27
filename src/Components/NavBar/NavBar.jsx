@@ -10,6 +10,7 @@ const NavBar = () => {
           <Menu/>
         </div>
       </div>
+
     </div>
 
   )
