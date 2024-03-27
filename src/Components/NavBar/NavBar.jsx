@@ -1,18 +1,17 @@
 import Logo from '../../assets/logo.png'
+import { RiMenu4Line as Menu } from "react-icons/ri";
 
 const NavBar = () => {
   return (
     <div>
-        <div className=" p-8">
-            <div className=" flex justify-around">
-                <p className=' cursor-pointer text-gray-700 font-medium'>Home</p>
-                <p className=' cursor-pointer text-gray-700 font-medium'>About</p>
-                <img src={Logo} width={80}/>
-                <p className=' cursor-pointer text-gray-700 font-medium'>Events</p>
-                <p className=' cursor-pointer text-gray-700 font-medium'>Contact</p>
-            </div>
+      <div className=" flex justify-between p-8 px-20">
+        <img src={Logo} width={80} />
+        <div className=' text-[24px]'>
+          <Menu/>
         </div>
+      </div>
     </div>
+
   )
 }
 
