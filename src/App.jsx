@@ -1,3 +1,4 @@
+import Dept from "./Components/Dept/Dept";
 import Hero from "./Components/Home/Hero";
 import NavBar from "./Components/NavBar/NavBar"
 
@@ -6,6 +7,7 @@ const App = () => {
     <div>
       <NavBar/>
       <Hero/>
+      <Dept/>
     </div>
   )
 }
