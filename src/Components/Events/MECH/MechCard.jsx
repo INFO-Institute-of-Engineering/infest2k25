@@ -1,13 +1,15 @@
-import ElectricalCardContent from "./ElectricalCardContent";
+
 import { FaArrowRight as Register } from "react-icons/fa";
+import MechCardContent from "./MechCardContent";
 
 
-const ElectricalCard = () => {
+
+const MechCard = () => {
   return (
     <div>
-        <div className=" grid grid-cols-3 w-[85%] mx-auto md:grid-cols-1 cursor-pointer">
+        <div className=" grid grid-cols-3 w-[85%] mx-auto md:grid-cols-1">
             {
-                ElectricalCardContent.map((content)=>(
+                MechCardContent.map((content)=>(
                     
                     <div key={content.eventTitle} className=" border rounded-md p-6 m-4 flex flex-col justify-between gap-4 hover:shadow-xl">
                         <h1 className=" text-[18px] font-extrabold bg-gradient-to-r from-blue-500 via-green-500 to-green-500 bg-clip-text text-transparent">{content.eventTitle}</h1>
@@ -21,4 +23,4 @@ const ElectricalCard = () => {
   )
 }
 
-export default ElectricalCard;
+export default MechCard;
