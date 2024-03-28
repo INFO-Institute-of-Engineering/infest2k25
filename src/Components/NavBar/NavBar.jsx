@@ -14,7 +14,7 @@ const NavBar = () => {
         <img src={Logo} width={80} />
         <div className=' text-[24px] cursor-pointer duration-500 ease-in'>
           {
-            ShowMenu===false ? <Menu className='text-[32px]' onClick={()=>setShowMenu((prev)=>!prev)}/> : <MenuItems ShowMenu={ShowMenu} setShowMenu={setShowMenu} />
+            ShowMenu===false ? <Menu className='text-[32px]' onClick={()=>setShowMenu((prev)=>!prev)}/> : <MenuItems setShowMenu={setShowMenu} />
           }
         </div>
       </div>

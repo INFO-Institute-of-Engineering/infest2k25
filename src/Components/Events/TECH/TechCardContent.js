@@ -23,6 +23,6 @@ const TechCardContent = [
         eventTitle : "Gaming",
         eventDesc : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nesciunt ipsa officiis suscipit quia exercitationem laborum excepturi nostrum officia et incidunt molestiae, rerum possimus expedita? Sit quaerat aliquam minus in."
     },
-]
+];
 
 export default TechCardContent;

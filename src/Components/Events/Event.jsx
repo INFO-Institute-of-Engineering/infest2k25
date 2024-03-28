@@ -1,11 +1,11 @@
-
+import TechCard from "./TECH/TechCard.jsx";
 
 const Event = () => {
   return (
     <div>
       <div>
-        <div>
           <div>
+
             <div className="my-4 relative text-[60px] font-extrabold text-center [-webkit-text-stroke:1px_#0092ff] text-transparent">E V E N T S<p className="[-webkit-text-stroke:1px_#000] font-extrabold text-black text-[30px] text-center absolute top-[calc(100%-50px)] left-0 right-0 mx-auto">EVENTS</p>
             </div>
 
@@ -23,8 +23,11 @@ const Event = () => {
               </div>
             </div>
 
+            <div>
+              <TechCard/>
+            </div>
+
           </div>
-        </div>
       </div>
     </div>
   )

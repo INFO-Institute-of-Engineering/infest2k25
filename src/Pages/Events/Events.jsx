@@ -1,8 +1,13 @@
+import Event from "../../Components/Events/Event.jsx";
 
 
 const Events = () => {
   return (
-    <div>Events</div>
+    <div>
+      <div>
+        <Event/>
+      </div>
+    </div>
   )
 }
 

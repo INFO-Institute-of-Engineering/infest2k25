@@ -6,9 +6,10 @@ import SH from "../../../../assets/Dept/sh.jpg";
 import { useState } from "react";
 
 const DeptCard = () => {
-  const [mouseHover,setMouseHover]=useState("tech");
+
   return (
     <div>
+
       <div className=" flex">
 
         <div className=" w-[25%] h-[65vh] border-[2px] border-blue-500 rounded-[7px] overflow-hidden">
@@ -16,22 +17,23 @@ const DeptCard = () => {
         </div>
 
         <div className=" w-[25%] h-[65vh] border-[2px] border-blue-500 rounded-[7px] overflow-hidden">
-          <img src={Electrial} alt="Tech_Departments" className=" object-cover h-full w-full" />
+          <img src={Electrial} alt="Electrial_Departments" className=" object-cover h-full w-full" />
         </div>
 
         <div className=" w-[25%] h-[65vh] border-[2px] border-blue-500 rounded-[7px] overflow-hidden">
-          <img src={Mech} alt="Tech_Departments" className=" object-cover h-full w-full" />
+          <img src={Mech} alt="Mech_Departments" className=" object-cover h-full w-full" />
         </div>
 
         <div className=" w-[25%] h-[65vh] border-[2px] border-blue-500 rounded-[7px] overflow-hidden">
-          <img src={SH} alt="Tech_Departments" className=" object-cover h-full w-full" />
+          <img src={SH} alt="SH_Departments" className=" object-cover h-full w-full" />
         </div>
 
         <div className=" w-[25%] h-[65vh] border-[2px] border-blue-500 rounded-[7px] overflow-hidden">
-          <img src={MBA} alt="Tech_Departments" className=" object-cover h-full w-full" />
+          <img src={MBA} alt="MBA_Departments" className=" object-cover h-full w-full" />
         </div>
 
       </div>
+
     </div>
   )
 }
