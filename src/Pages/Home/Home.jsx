@@ -1,8 +1,14 @@
-
+import Hero from "../../Components/Home/Hero.jsx"
+import HomeDept from "../../Components/Home/HomeDept/HomeDept.jsx";
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <div>
+        <Hero/>
+        <HomeDept/>
+      </div>
+    </div>
   )
 }
 
