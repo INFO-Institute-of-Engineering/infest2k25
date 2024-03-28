@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Logo from '../../assets/logo.png'
 
 import { RiMenu4Line as Menu } from "react-icons/ri";
@@ -7,6 +7,9 @@ import MenuItems from './MenuItems';
 
 const NavBar = () => {
   const [ShowMenu,setShowMenu]=useState(false);
+  useEffect(()=>{
+    setShowMenu(false);
+  },[])
   
   return (
     <div>

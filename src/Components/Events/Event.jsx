@@ -11,6 +11,8 @@ const Event = () => {
             
             <div className="my-4 text-[60px] font-extrabold text-center [-webkit-text-stroke:1px_#0092ff] text-transparent animate-colorChange">E V E N T S</div>
 
+            <div className="my-4 relative text-[60px] font-extrabold text-center [-webkit-text-stroke:1px_#0092ff] text-transparent">E V E N T S<p className="[-webkit-text-stroke:1px_#000] font-extrabold text-black text-[30px] text-center absolute text-ellipsis top-[calc(100%-50px)] left-0 right-0 mx-auto z-10">EVENTS</p>
+            </div>
 
             <div className=" font-medium text-center">
               <p>Explore our Events and Register now !</p>
