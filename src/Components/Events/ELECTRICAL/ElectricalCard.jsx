@@ -6,7 +6,7 @@ ElectricalCardContent
 const ElectricalCard = () => {
   return (
     <div>
-        <div className=" grid grid-cols-3 w-[85%] mx-auto md:grid-cols-1">
+        <div className=" grid grid-cols-3 w-[85%] mx-auto md:grid-cols-1 cursor-pointer">
             {
                 ElectricalCardContent.map((content)=>(
                     
