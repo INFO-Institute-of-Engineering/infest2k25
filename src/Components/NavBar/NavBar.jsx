@@ -2,11 +2,7 @@ import { useEffect, useState } from 'react';
 import Logo from '../../assets/logo.png';
 import { RiMenu4Line as Menu } from "react-icons/ri";
 import MenuItems from './MenuItems';
-<<<<<<< HEAD
-import { useLocation } from 'react-router-dom';
-=======
-import { Link } from 'react-router-dom';
->>>>>>> 3d1aa2be49f6a9d42519ab1cf103711a98929e55
+import { Link,useLocation } from 'react-router-dom';
 
 
 const NavBar = () => {
