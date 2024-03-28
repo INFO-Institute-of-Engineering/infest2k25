@@ -3,13 +3,15 @@ import Logo from '../../assets/logo.png'
 
 import { RiMenu4Line as Menu } from "react-icons/ri";
 import MenuItems from './MenuItems';
+import { useLocation } from 'react-router-dom';
 
 
 const NavBar = () => {
+  const location = useLocation();
   const [ShowMenu,setShowMenu]=useState(false);
   useEffect(()=>{
     setShowMenu(false);
-  },[])
+  },[location.pathname]);
   
   return (
     <div>

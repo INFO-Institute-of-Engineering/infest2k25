@@ -1,5 +1,5 @@
 import { FaArrowRight as Register } from "react-icons/fa";
-
+import ShCardContent from "./ShCardContent.js";
 
 const ShCard = () => {
   return (
