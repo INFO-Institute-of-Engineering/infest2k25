@@ -24,7 +24,7 @@ const ShCardContent = [
         eventDesc : "Web Master is an event where the participants have to express their web development skills by creating a website with given requirements."
     },
     {
-        eventTitle : "Drama	or	Mime",
+        eventTitle : "Drama or Mime",
         eventDesc : "Web Master is an event where the participants have to express their web development skills by creating a website with given requirements."
     },
 ];
