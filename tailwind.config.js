@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        FiraCOde: ["Fira Code"]
+        FiraCOde: ["Fira Code"],
+        Anton: ["Anton"]
       },
     },
     screens: {
