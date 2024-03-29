@@ -14,7 +14,7 @@ const NavBar = () => {
   
   return (
     <div>
-      <div className=" flex justify-between p-8 px-20 sticky">
+      <div className=" flex justify-between p-8 px-20 fixed w-full top-0 z-10">
         <Link to={'/'} className=' cursor-pointer'><img src={Logo} width={80} /></Link>
         <div className=' text-[24px] cursor-pointer duration-500 ease-in'>
           {
