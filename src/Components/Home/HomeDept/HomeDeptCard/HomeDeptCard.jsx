@@ -15,7 +15,7 @@ const HomeDeptCard = () => {
 
         {/** Tech */}
         <div
-          className={`${dept === "tech" ? "w-[30%]" : "w-[8%]"} relative duration-500 h-[65vh]  rounded-[7px] overflow-hidden md:w-full md:h-[30vh]`}
+          className={`${dept === "tech" ? "w-[30%]" : "w-[8%]"} relative duration-500 h-[65vh]  rounded-[7px] overflow-hidden md:w-full md:h-[25vh]`}
           onMouseOver={() => { setDept("tech") }}
         >
           <img src={Tech} alt="Tech_Departments" className=" object-cover h-full w-full" />
@@ -34,7 +34,7 @@ const HomeDeptCard = () => {
 
         {/** Electrical */}
         <div
-          className={`${dept === "electrical" ? "w-[30%]" : "w-[8%]"} relative duration-500 h-[65vh]  rounded-[7px] overflow-hidden md:w-full md:h-[30vh]`}
+          className={`${dept === "electrical" ? "w-[30%]" : "w-[8%]"} relative duration-500 h-[65vh]  rounded-[7px] overflow-hidden md:w-full md:h-[25vh]`}
           onMouseOver={() => { setDept("electrical") }}
         >
           <img src={Electrial} alt="Electrial_Departments" className=" object-cover h-full w-full" />
@@ -53,7 +53,7 @@ const HomeDeptCard = () => {
 
         {/**Mech */}
         <div
-          className={`${dept === "mech" ? "w-[30%]" : "w-[8%]"} relative duration-500 h-[65vh]  rounded-[7px] overflow-hidden md:w-full md:h-[30vh]`}
+          className={`${dept === "mech" ? "w-[30%]" : "w-[8%]"} relative duration-500 h-[65vh]  rounded-[7px] overflow-hidden md:w-full md:h-[25vh]`}
           onMouseOver={() => { setDept("mech") }}
         >
           <img src={Mech} alt="Mech_Departments" className=" object-cover h-full w-full" />
@@ -72,7 +72,7 @@ const HomeDeptCard = () => {
 
         {/**S&H */}
         <div
-          className={`${dept === "sh" ? "w-[30%]" : "w-[8%]"} relative duration-500 h-[65vh]  rounded-[7px] overflow-hidden md:w-full md:h-[30vh]`}
+          className={`${dept === "sh" ? "w-[30%]" : "w-[8%]"} relative duration-500 h-[65vh]  rounded-[7px] overflow-hidden md:w-full md:h-[25vh]`}
           onMouseOver={() => { setDept("sh") }}
         >
           <img src={SH} alt="SH_Departments" className=" object-cover h-full w-full" />
@@ -91,7 +91,7 @@ const HomeDeptCard = () => {
 
         {/**MBA */}
         <div
-          className={`${dept === "mba" ? "w-[30%]" : "w-[8%]"} relative duration-500 h-[65vh]  rounded-[7px] overflow-hidden md:w-full md:h-[30vh]`}
+          className={`${dept === "mba" ? "w-[30%]" : "w-[8%]"} relative duration-500 h-[65vh]  rounded-[7px] overflow-hidden md:w-full md:h-[25vh]`}
           onMouseOver={() => { setDept("mba") }}
         >
           <img src={MBA} alt="MBA_Departments" className=" object-cover h-full w-full" />
