@@ -21,7 +21,7 @@ const Hero = ({ scrollToContact }) => {
                 <div>
 
                     <div className=" relative">
-                        <div className="mx-auto mt-[7%] pb-10 z-20 flex flex-col items-center justify-center  md:mt-[25%] md:h-screen">
+                        <div className="mx-auto mt-[7%] pb-10 z-20 flex flex-col items-center justify-center md:h-screen">
                             <h1
                                 className="text-center my-[1.5%] text-[25px] text-blue-500 font-bold"
                                 style={NotSelected}
