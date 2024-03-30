@@ -8,7 +8,7 @@ const MenuItems = ({setShowMenu}) => {
             <div className=' flex flex-col gap-10 p-5 justify-center rounded-md pl-[25%] text-[18px] mt-[30%]'>
                 <Link to={"/"} className=' font-medium text-white cursor-pointer'>Home</Link>
                 <p className=' font-medium text-white cursor-pointer'>About</p>
-                <Link to={"/event"} className='font-medium text-white cursor-pointer'>Events</Link>
+                <Link to={"/event/tech"} className='font-medium text-white cursor-pointer'>Events</Link>
                 <p className=' font-medium text-white cursor-pointer'>Contact</p>
             </div>
         </div>
