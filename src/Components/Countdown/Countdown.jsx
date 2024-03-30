@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+// import GoogleCalender from './GoogleCalendar';
 
 const Countdown = () => {
   const [days, setDays] = useState(0);
@@ -67,6 +68,10 @@ const Countdown = () => {
           </div>
 
         </div>
+
+        {/* <div className=' w-screen py-[5%]'>
+        <GoogleCalender/>
+        </div> */}
       </div>
 
     </div>

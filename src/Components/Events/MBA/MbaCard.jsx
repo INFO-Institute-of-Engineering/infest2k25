@@ -1,28 +1,82 @@
-
+import MbaCardContent from "./MbaCardContent.js"
 import { FaArrowRight as Register } from "react-icons/fa";
-import MbaCardContent from "./MbaCardContent";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
-
-
+import {hoverbottom,
+  bottomshade,
+  topshade,
+} from "../../../assets/index.js";
 
 const MbaCard = () => {
+  const [hovered, setHovered] = useState(null);
+
+  const handleMouseEnter = (id) => {
+    setHovered(id);
+  };
+
+  const handleMouseLeave = () => {
+    setHovered(null);
+  };
+
   return (
-    <div>
-        <div className=" grid grid-cols-3 w-[85%] mx-auto md:grid-cols-1">
-            {
-                MbaCardContent.map((content)=>(
-                    
-                    <Link to={`/event/mba/${content.eventTitle}`} key={content.eventTitle} className=" border rounded-md p-6 m-4 flex flex-col justify-between gap-4 hover:shadow-xl">
-                        <h1 className=" text-[18px] font-extrabold bg-gradient-to-r from-blue-500 via-green-500 to-green-500 bg-clip-text text-transparent">{content.eventTitle}</h1>
-                        <p className=" text-gray-600 font-normal text-[14px]">{content.eventDesc}</p>
-                        <p className=" text-[14px] flex items-center font-bold border w-[60%] p-3 rounded-lg hover:bg-gradient-to-l from-blue-500 to-green-500 cursor-pointer hover:text-white">Register Now&#160;<Register/></p>
-                    </Link>
-                ))
-            }
-        </div>
+    <div className="flex flex-wrap justify-center gap-[7%] w-[80%] mx-auto md:grid-cols-1 cursor-pointer">
+      {MbaCardContent.map((content) => (
+        <Link
+          to={`/event/tech/${content.eventTitle}`}
+          key={content.id}
+          className="relative z-10 border m-4 rounded-[1px] overflow-hidden h-[50vh] duration-500 bg-cover bg-center w-[40%]"
+          style={{ backgroundImage: `url(${content.img})` }}
+          onMouseOver={() => handleMouseEnter(content.id)}
+          onMouseLeave={handleMouseLeave}
+        >
+          <div className={`absolute bg-opacity-25 top-0 z-30 w-full h-full ${hovered === content.id ? "bg-gray-900" : "bg-gray-800"}`}></div>
+
+          {hovered === content.id && (
+            <div className="absolute z-50 top-[22%] left-[5%]  p-6 flex flex-col justify-between gap-4 w-[80%]">
+
+              <h1 className="text-[22px] font-extrabold text-white  bg-clip-text text-transparent">
+                {content.eventTitle}
+              </h1>
+              <p className="text-white font-normal text-[12px] custom-truncate">
+                {content.eventDesc}
+              </p>
+              
+              <p className="text-[13px] text-center flex items-center font-bold  w-[60%] p-3 rounded-[2px] bg-white cursor-pointer hover:bg-transparent hover:border border-gray-500 hover:shadow-lg">
+                Register Now&#160;
+                <Register />
+              </p>
+            </div>
+          ) }
+
+          {
+            hovered !== content.id && <div className="flex pt-[20%] justify-center h-full w-full z-40">
+            <h1 className="text-center text-[22px] font-extrabold z-40 text-white">{content.eventTitle}</h1>
+          </div>
+          }
+
+          {/* Topshade */}
+          {hovered === content.id && (
+            <div className="absolute top-[-30px] right-0 z-40">
+              <img src={topshade} alt="" />
+            </div>
+          )}
+
+          {/* Bottom shade */}
+          {hovered === content.id ? (
+            <div className="absolute duration-500 bottom-[-30px] left-0  z-40">
+              <img src={hoverbottom} alt="" />
+            </div>
+          ) : (
+            <div className="absolute duration-500 bottom-[-15px] left-0 z-40">
+              <img src={bottomshade} alt="" />
+            </div>
+          )}
+        </Link>
+      ))}
     </div>
-  )
-}
+  );
+};
 
 export default MbaCard;
+

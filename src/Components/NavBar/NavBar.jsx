@@ -18,7 +18,7 @@ const NavBar = () => {
      <div className=' flex flex-col items-center justify-center relative'>
       <div className=" flex justify-between p-4 mt-[2%] border blur-background border-gray-400 px-20 w-[90%] z-10 rounded-[25px]">
         <Link to={'/'} className=' cursor-pointer'><img src={Logo} width={80} /></Link>
-        <div className=' text-[24px] cursor-pointer duration-500 ease-in'>
+        <div className={`text-[24px] cursor-pointer duration-500 ease-in rounded-[50%] ${ShowMenu === false && "border border-gray-600 bg-white"} w-[50px] h-[50px] flex justify-center items-center `}>
           {
             ShowMenu===false && <Menu className='text-[32px]' onClick={()=>setShowMenu((prev)=>!prev)}/> 
           }

@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 const MenuItems = ({setShowMenu}) => {
     
     return (
-        <div className=" fixed w-[25%] sm:w-[90%] duration-500  bg-blue-500 top-[25%] right-0 py-[2.5%] pt-[2%] h-[100vh] z-50 cursor-default">
+        <div className=" fixed w-[25%] sm:w-[90%] md:w-[50%] duration-500  bg-blue-500 top-[25%] right-0 py-[2.5%] pt-[2%] h-[100vh] z-50 cursor-default">
 
             <Arrow className=" float-right mr-[45%] sm:mr-[16%] cursor-pointer sm:mt-[5%] text-black text-[32px] bg-blue-500 z-50" onClick={()=>setShowMenu((prev)=>!prev)}/>
 
