@@ -5,7 +5,7 @@ import { IoGiftOutline as Prize } from "react-icons/io5";
 const About = () => {
   return (
     <div>
-      <div>
+      <div id="about">
         <div className=" px-8 pt-8 flex md:flex-col justify-evenly gap-10 items-center">
 
           <div className=" w-[50%] md:w-[90%] gap-10 md:gap-5 flex flex-col">

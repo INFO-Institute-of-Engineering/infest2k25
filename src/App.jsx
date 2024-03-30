@@ -9,6 +9,7 @@ const App = () => {
     if (footerElement) {
       footerElement.scrollIntoView({ behavior: 'smooth' });
     }
+
   };
   return (
     <div>
