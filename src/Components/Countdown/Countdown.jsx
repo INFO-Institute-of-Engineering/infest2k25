@@ -33,7 +33,7 @@ const Countdown = () => {
 
   return (
     <div>
-      <div className=' flex flex-col justify-evenly items-center mb-10'>
+      <div className=' flex flex-col justify-evenly items-center mb-20 pb-10'>
         <div className=' w-[80%] text-center'>
           <h1 className=' font-bold text-[60px]'>Mark Your<span className=' bg-gradient-to-r from-blue-500 via-green-500 to-green-500 bg-clip-text text-transparent'> Calendar</span></h1>
           <p>Join us at the forefront of technological advancements and gain valuable insights at our upcoming technical symposium Infest 2K24!</p>

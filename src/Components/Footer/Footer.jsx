@@ -5,10 +5,11 @@ import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
+
   return (
     <div>
-      <div>
-        <div className=" flex flex-col items-center gap-10 py-10 bg-black text-[#f6efee]" id="contact">
+      <div  id="contact">
+        <div className=" flex flex-col items-center gap-10 py-10 bg-black text-[#f6efee]">
           <h1 className=" text-[50px] font-bold bg-gradient-to-r from-blue-500 via-green-500 to-green-500 bg-clip-text text-transparent">Contact us</h1>
           <div className=" flex gap-20">
 
