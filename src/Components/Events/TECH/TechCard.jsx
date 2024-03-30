@@ -10,7 +10,7 @@ import {hoverbottom,
 import { useState } from "react";
 
 const TechCard = () => {
-  const [cardshade, setCardShade] = useState("");
+  const [hovered, setHovered] = useState(null);
 
   return (
     <div>
@@ -21,13 +21,13 @@ const TechCard = () => {
             key={content.eventTitle}
             className={`relative hover:shadow-2xl z-10 border m-4 rounded-[1px] overflow-hidden h-[50vh] bg-cover bg-center w-full `}
             style={{ backgroundImage: `url(${content.img})` }}
-            onMouseOver={() => setCardShade(content.eventTitle)}
-            onMouseLeave={() => setCardShade("")}
+            onMouseOver={() => setHovered(content.eventTitle)}
+            onMouseLeave={() => setHovered(null)}
           >
             <div className=" absolute bg-gray-400 bg-opacity-25 top-0 w-full h-full">
             </div>
 
-            {cardshade === content.eventTitle ? (
+            {hovered === content.eventTitle ? (
               <div className="absolute z-50 top-[22%] left-[5%]  p-6 flex flex-col justify-between gap-4 w-[80%]">
                 <h1 className=" text-[18px] font-extrabold bg-gradient-to-r from-blue-500 via-green-500 to-green-500 bg-clip-text text-transparent">
                   {content.eventTitle}
@@ -46,13 +46,15 @@ const TechCard = () => {
               </div>
             )}
 
-            {cardshade === content.eventTitle && (
+            {/**Topshade */}
+            {hovered === content.eventTitle && (
               <div className="absolute duration-500 top-[-30px] right-0">
                 <img src={topshade} alt="" />
               </div>
             )}
 
-            {cardshade === content.eventTitle ? (
+            {/**Bottom shade */}
+            {hovered === content.eventTitle ? (
               <div className="absolute duration-500 bottom-[-30px] left-0 ">
                 <img src={hoverbottom} alt="" />
               </div>
@@ -61,6 +63,7 @@ const TechCard = () => {
                 <img src={bottomshade} alt="" />
               </div>
             )}
+            
           </Link>
         ))}
       </div>
