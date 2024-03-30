@@ -13,7 +13,7 @@ const MenuItems = ({setShowMenu}) => {
                 <Link to={"/"} className=' font-medium cursor-pointer'>Home</Link>
                 <p className=' font-medium  cursor-pointer'>About</p>
                 <Link to={"/event/tech"} className='font-medium  cursor-pointer'>Events</Link>
-                <p className=' font-medium  cursor-pointer'>Contact</p>
+                <Link to={'#contact'} onClick={() => scrollToContact()} className=' font-medium  cursor-pointer'>Contact</Link>
             </div>
         </div>
     )
