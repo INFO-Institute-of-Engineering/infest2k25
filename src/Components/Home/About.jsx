@@ -8,12 +8,7 @@ const About = () => {
       <div>
         <div className=" px-8 pt-8 flex md:flex-col justify-evenly gap-10 items-center">
 
-<<<<<<< HEAD
-          <div className=" w-[50%] sm:w-[90%] gap-10 sm:gap-5 flex flex-col">
-
-=======
           <div className=" w-[50%] md:w-[90%] gap-10 md:gap-5 flex flex-col">
->>>>>>> f580acf9120163bfdda396923265be6fefd7ff5d
             <h1 className=" text-[30px] font-bold bg-gradient-to-r from-blue-500 via-green-500 to-green-500 bg-clip-text text-transparent">About Infest</h1>
 
             <p className=" text-gray-700">Welcome to <strong>Infest 2K24</strong> , the National Level Technical Symposium
