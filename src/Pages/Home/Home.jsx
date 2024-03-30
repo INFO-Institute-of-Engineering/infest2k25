@@ -5,9 +5,6 @@ import HomeDept from "../../Components/Home/HomeDept/HomeDept.jsx";
 
 
 const Home = () => {
-<<<<<<< HEAD
-  document.documentElement.scrollTop=0;
-=======
 
   const handleScrollToContact = () => {
     const footerElement = document.getElementById('contact');
@@ -16,7 +13,6 @@ const Home = () => {
     }
   };
   
->>>>>>> 241f9d1b79085d22c1d754fe5c9cc7d21db2ffd2
   return (
     <div>
       <div>
