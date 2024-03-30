@@ -1,9 +1,11 @@
+import React from "react";
 import InfoLogo from "../../assets/logo.png";
 import ParticleComponent from "./Particles";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 
-const Hero = () => {
+
+const Hero = ({ scrollToContact }) => {
     const NotSelected = {
         "-webkit-user-select": "none",
         "-moz-user-select": "none",
@@ -15,7 +17,7 @@ const Hero = () => {
         <div>
 
             <div>
-                <ParticleComponent/>
+                <ParticleComponent />
                 <div>
 
                     <div className=" relative">
@@ -42,11 +44,12 @@ const Hero = () => {
 
                             <div className=" flex flex-row sm:flex-col  justify-evenly items-center mx-auto text-center my-[2%] w-[45%] font-semibold">
                                 <div className=" text-[20px] hover:shadow-lg sm:my-[5%] w-[250px] px-[30px] py-[15px] border-[2px] rounded-[8px] text-white bg-blue-500 border-blue-500 cursor-pointer">
-                                    <Link to={'event/tech'}>Register&#160;Events</Link>
+                                    <Link to={'/event/tech'}>Register&#160;Events</Link>
                                 </div>
 
-                                <div className=" text-[20px] hover:shadow-lg sm:my-[5%] w-[250px] px-[30px] py-[15px] border-[2px] rounded-[8px] border-green-500 cursor-pointer text-green-500">
-                                    <Link to={'contact'}>Contact&#160;Us</Link>
+                                <div className=" text-[20px] hover:shadow-lg sm:my-[5%] w-[250px] px-[30px] py-[15px] border-[2px] rounded-[8px] border-green-500 cursor-pointer text-green-500"
+                                >
+                                    <Link to={'#contact'} onClick={() => scrollToContact()}>Contact&#160;Us</Link>
                                 </div>
                             </div>
                         </div>

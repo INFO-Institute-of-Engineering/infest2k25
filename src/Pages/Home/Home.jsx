@@ -6,10 +6,18 @@ import HomeDept from "../../Components/Home/HomeDept/HomeDept.jsx";
 
 
 const Home = () => {
+
+  const handleScrollToContact = () => {
+    const footerElement = document.getElementById('contact');
+    if (footerElement) {
+      footerElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  
   return (
     <div>
       <div>
-        <Hero />
+        <Hero  scrollToContact={handleScrollToContact} />
         <About/>
         <HomeDept />
         <Countdown/>
