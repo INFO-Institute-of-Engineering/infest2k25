@@ -1,7 +1,7 @@
 import InfoLogo from "../../assets/logo.png";
-import Left from "../../assets/hero_left_new.png";
-import Right from "../../assets/hero_right.png";
-import BgVideo from "../../assets/HomeBack.mp4";
+import ParticleComponent from "./Particles";
+
+
 
 const Hero = () => {
     const NotSelected = {
@@ -15,16 +15,8 @@ const Hero = () => {
         <div>
 
             <div>
+                <ParticleComponent/>
                 <div>
-
-                    <video
-                        autoPlay
-                        muted
-                        loop
-                        src={BgVideo}
-                        className=" absolute top-0 object-cover w-full h-full"
-                    ></video>
-                    <div className="absolute top-0 left-0 w-full h-full bg-blue-300 bg-opacity-50 rounded-[10px] "></div>
 
                     <div className=" relative">
                         <div className="mx-auto mt-[10%] z-20">
