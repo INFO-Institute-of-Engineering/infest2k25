@@ -17,7 +17,7 @@ const NavBar = () => {
    <div className='blur-background w-screen fixed top-0 z-40'>
      <div className=' flex flex-col items-center justify-center relative'>
 
-      <div className=" flex justify-between p-4 mt-[2%] border blur-background border-gray-400 px-20 sm:px-5 w-[90%] sm:w-[92%] z-10 rounded-[25px]">
+      <div className=" flex justify-between p-4 mt-[2%] border blur-background border-gray-400 px-20 md:px-5 w-[90%] md:w-[92%] z-10 rounded-[25px]">
 
         <Link to={'/'} className=' cursor-pointer'>
           <img src={Logo} width={80} />

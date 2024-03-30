@@ -21,7 +21,7 @@ const Hero = ({ scrollToContact }) => {
                 <div>
 
                     <div className=" relative">
-                        <div className="mx-auto mt-[10%] z-20">
+                        <div className="mx-auto mt-[7%] pb-10 z-20 flex flex-col items-center justify-center md:h-screen">
                             <h1
                                 className="text-center my-[1.5%] text-[25px] text-blue-500 font-bold"
                                 style={NotSelected}
@@ -42,7 +42,7 @@ const Hero = ({ scrollToContact }) => {
                                 23rd April 2024
                             </h1>
 
-                            <div className=" flex flex-row sm:flex-col  justify-evenly items-center mx-auto text-center my-[2%] w-[45%] font-semibold">
+                            <div className=" flex flex-row sm:flex-col  justify-evenly items-center mx-auto text-center my-[1%] w-[45%] font-semibold">
                                 <div className=" text-[20px] hover:shadow-lg sm:my-[5%] w-[250px] px-[30px] py-[15px] border-[2px] rounded-[8px] text-white bg-blue-500 border-blue-500 cursor-pointer">
                                     <Link to={'/event/tech'}>Register&#160;Events</Link>
                                 </div>
