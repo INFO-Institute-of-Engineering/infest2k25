@@ -18,7 +18,7 @@ const Hero = ({ scrollToContact }) => {
 
             <div>
                 <ParticleComponent />
-                <div>
+                <div className=" md:flex items-center justify-center">
 
                     <div className=" relative">
                         <div className="mx-auto mt-[10%] z-20 md:mt-[25%] md:h-screen">
