@@ -13,8 +13,9 @@ const NavBar = () => {
   },[location.pathname]);
   
   return (
-    <div>
-      <div className=" flex justify-between p-8 px-20 fixed w-full top-0 z-10">
+   <div className='blur-background w-screen fixed top-0 z-40'>
+     <div className=' flex flex-col items-center justify-center relative'>
+      <div className=" flex justify-between p-4 mt-[2%] border blur-background border-gray-400 px-20 w-[90%] z-10 rounded-[25px]">
         <Link to={'/'} className=' cursor-pointer'><img src={Logo} width={80} /></Link>
         <div className=' text-[24px] cursor-pointer duration-500 ease-in'>
           {
@@ -24,6 +25,7 @@ const NavBar = () => {
       </div>
 
     </div>
+   </div>
 
   )
 }

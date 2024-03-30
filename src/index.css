@@ -13,4 +13,15 @@ html, body{
     color: #0f172a;
 }
 
+.custom-truncate{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3; /* Number of lines to show */
+}
+
+.blur-background{
+    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+}
+
   
