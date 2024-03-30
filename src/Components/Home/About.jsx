@@ -4,9 +4,9 @@ const About = () => {
   return (
     <div>
       <div>
-        <div className=" px-8 pt-8 flex justify-evenly items-center">
+        <div className=" px-8 pt-8 flex sm:flex-col sm:gap-[10%] justify-evenly items-center">
 
-          <div className=" w-[50%] gap-10 flex flex-col">
+          <div className=" w-[50%] sm:w-[90%] gap-10 sm:gap-5 flex flex-col">
             <h1 className=" text-[30px] font-bold bg-gradient-to-r from-blue-500 via-green-500 to-green-500 bg-clip-text text-transparent">About Infest</h1>
             <p className=" text-gray-700">Welcome to <strong>Infest 2K24</strong> , the National Level Technical Symposium
               hosted by Info Institute of Engineering! We're excited to provide a
@@ -24,8 +24,9 @@ const About = () => {
               Join us for an experience that will never fades away.
             </p>
           </div>
+
           <div>
-            <img src={AboutImg} width={500} className=" rounded-lg" />
+            <img src={AboutImg} width={500} className=" rounded-lg sm:mt-[7%]" />
           </div>
         </div>
       </div>
