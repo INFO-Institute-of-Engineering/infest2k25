@@ -62,7 +62,7 @@ const HomeDeptCard = () => {
 
             <p className={`${dept === "mech" ? "" : "rotate-[-90deg]"} ${dept !== "mech" && "animate-pulse"}  duration-700 text-white font-bold text-[25px] text-center`}>MECH</p>
 
-            <Link to={"/event/mba"} className={`${dept === "mech" ? "block" : "hidden"} text-[14px] px-[5%] py-[3%] cursor-pointer rounded-[25px] bg-gradient-to-r from-blue-500 to-green-500 text-white font-bold uppercase hover:shadow-lg`}>
+            <Link to={"/event/mech"} className={`${dept === "mech" ? "block" : "hidden"} text-[14px] px-[5%] py-[3%] cursor-pointer rounded-[25px] bg-gradient-to-r from-blue-500 to-green-500 text-white font-bold uppercase hover:shadow-lg`}>
               <p>View&#160;Events</p>
             </Link>
 

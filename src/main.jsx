@@ -12,6 +12,7 @@ import {
   MbaCard,
   ElectricalCard
 } from "./Components/Events/index.js"
+import Footer from './Components/Footer/Footer.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path:"/contact",
+        element:<Footer/>
       },
       {
         path: "/event",
