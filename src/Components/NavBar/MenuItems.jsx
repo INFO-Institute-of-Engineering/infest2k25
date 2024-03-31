@@ -11,7 +11,6 @@ const MenuItems = ({setShowMenu}) => {
 
             <div className=' flex flex-col gap-10 p-5 justify-center rounded-md pl-[25%] text-[18px] w-full text-white bg-blue-500 h-full'>
                 <Link to={"/"} className=' font-medium cursor-pointer'>Home</Link>
-                <p className=' font-medium  cursor-pointer'>About</p>
                 <Link to={"/event/tech"} className='font-medium  cursor-pointer'>Events</Link>
                 <Link to={'#contact'} onClick={() => scrollToContact()} className=' font-medium  cursor-pointer'>Contact</Link>
             </div>
