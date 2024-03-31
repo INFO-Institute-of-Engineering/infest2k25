@@ -9,7 +9,7 @@ import logo from "../../assets/logo.png";
 const EventDetailsComponent = ({ title, desc, img }) => {
   document.documentElement.scrollTop = 0;
   return (
-    <div className="md:mt-[20%]  mt-[11%] flex flex-col gap-4  mb-[4%] overflow-x-hidden">
+    <div className="md:mt-[20%]  mt-[9%] flex flex-col gap-4  mb-[4%] overflow-x-hidden">
       {/** Banner Image */}
       <div
         style={{ backgroundImage: `url(${img})` }}
