@@ -20,7 +20,7 @@ const TechCard = () => {
   };
 
   return (
-    <div className="flex flex-wrap sm:flex-col justify-center gap-[7%] w-[80%] mx-auto md:grid-cols-1 cursor-pointer">
+    <div className="flex flex-wrap md:flex-col justify-center gap-[7%] w-[80%] mx-auto md:grid-cols-1 cursor-pointer">
       {TechCardContent.map((content) => (
         <div
           key={content.id}

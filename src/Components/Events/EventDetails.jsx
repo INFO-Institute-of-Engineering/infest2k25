@@ -9,15 +9,15 @@ import logo from "../../assets/logo.png";
 const EventDetailsComponent = ({ title, desc, img }) => {
   document.documentElement.scrollTop = 0;
   return (
-    <div className="md:mt-[20%] mt-[9%] flex flex-col gap-4  mb-[4%] overflow-x-hidden">
+    <div className="md:mt-[20%]  mt-[9%] flex flex-col gap-4  mb-[4%] overflow-x-hidden">
       {/** Banner Image */}
       <div
         style={{ backgroundImage: `url(${img})` }}
-        className="w-full h-[60vh] md:h-[90vh]  bg-cover bg-center relative"
+        className="w-full h-[60vh] sm:h-[25vh] md:h-[40vh]  bg-cover bg-center relative"
       >
         {/**Green shade */}
         <div
-          className="w-[45%] md:w-[60%] bg-green-500 h-[15vh] md:h-[13vh]  flex justify-center items-center absolute left-0 top-0"
+          className="w-[45%] md:w-[60%] bg-green-500 md:h-[7vh] h-[10vh]   flex justify-center items-center absolute left-0 top-0"
           style={{ borderRadius: "0px 0px 130px 0px" }}
         >
           <h1 className="text-[25px] md:text-[18px] font-bold text-white uppercase">
@@ -31,7 +31,7 @@ const EventDetailsComponent = ({ title, desc, img }) => {
         </div>
       </div>
 
-      <div className=" flex flex-row md:flex-col md:gap-4 items-center justify-between">
+      <div className=" flex flex-row md:flex-col mt-[2%] md:mt-[4%] md:gap-4 items-center justify-between">
         <div className=" ml-[5%]">
           {/**Event title */}
           <h1 className=" font-bold text-[24px] md:text-[20px] md:my-[2%] my-[2%]">
@@ -52,9 +52,7 @@ const EventDetailsComponent = ({ title, desc, img }) => {
 
             <div className=" flex flex-row gap-2">
               <p className=" uppercase font-bold ">venue :</p>
-              <p>Info Institute of Engineering,</p>
-              <p>Kovilpalayam,</p>
-              <p>641107</p>
+              <p>Info Institute of Engineering</p>
             </div>
           </div>
         </div>
