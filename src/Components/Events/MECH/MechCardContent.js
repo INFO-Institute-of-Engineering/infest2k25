@@ -1,7 +1,6 @@
 import {
     paperpresentation,
     projecpresentation,
-    paperbanner,
     cad_master,
     fun,
     mr_mechanic,
@@ -12,7 +11,8 @@ const MechCardContent = [
     {
         id:1,
         img:projecpresentation,
-        banner:"",
+        coordinator:"",
+        mobile:"",
         eventTitle : "Paper Presentation",
         eventDesc : "Paper presentation is an event where the participants are required to make a paper about a certain topic and then present it in front of a jury. ",
         rules:[
@@ -37,7 +37,8 @@ const MechCardContent = [
     {
         id:2,
         img:paperpresentation,
-        banner:paperbanner,
+        coordinator:"",
+        mobile:"",
         eventTitle : "Project Presentation",
         eventDesc : "Project Presentation is an event where the participants are required to make a project about a certain topic and present infront of a jury." ,
         rules:[
@@ -54,7 +55,8 @@ const MechCardContent = [
     {
         id:3,
         img:cad_master,
-        banner:"",
+        coordinator:"",
+        mobile:"",
         eventTitle : "CAD Master",
         eventDesc : "For this CAD master students will be provided computer with autocad software installed and they should perform the assigned task.",
         rules:[
@@ -70,13 +72,16 @@ const MechCardContent = [
     {
         id:4,
         img:fun,
+        coordinator:"",
+        mobile:"",
         eventTitle : "Fun Series",
         eventDesc : 'The students can have their fun and enjoyment in playing the series of games. Games will be an on spot event. Once you have registered you can participate in fun series games on the symposium date.',
     },
     {
         id:5,
         img:water_rocket,
-        banner:"",
+        coordinator:"",
+        mobile:"",
         eventTitle : "Watery Rocketry",
         eventDesc : "Water rocketry is a technical event in which students can use their ideas effectively and produce a pressurized water rocket.",
         rules:[
@@ -91,7 +96,8 @@ const MechCardContent = [
     {
         id:6,
         img:mr_mechanic,
-        banner:"",
+        coordinator:"",
+        mobile:"",
         eventTitle : "Mr.Mechanic",
         eventDesc : "This event is completely based on technical. Students are asked to identify mechanical components or to assemble the components.",
         rules:[

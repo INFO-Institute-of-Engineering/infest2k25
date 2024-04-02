@@ -5,9 +5,10 @@ import MbaCardContent from "./MBA/MbaCardContent";
 import ShCardContent from "./SH/ShCardContent";
 import MechCardContent from "./MECH/MechCardContent";
 import { GoDotFill as DotIcon } from "react-icons/go";
+import { FaWhatsapp as WhatsappIcon } from "react-icons/fa";
 import logo from "../../assets/logo.png";
 
-const EventDetailsComponent = ({ title, desc, img,rules,criteria }) => {
+const EventDetailsComponent = ({ title, desc, img,rules,criteria,mobile,coordinator }) => {
   document.documentElement.scrollTop = 0;
   return (
     <div className="md:mt-[20%]  mt-[9%] flex flex-col gap-4  mb-[4%] overflow-x-hidden">
@@ -96,6 +97,17 @@ const EventDetailsComponent = ({ title, desc, img,rules,criteria }) => {
         </div>
       </div>
 
+      <div className=" flex flex-row items-center border gap-[5%] px-[4%] py-[2%] w-[90%] bg-gray-100 my-[2%] mt-[3%] mx-auto justify-center">
+        <div className=" flex flex-row gap-2 items-start font-bold text-[20px]">
+          <h1>Coordinator :</h1>
+          <h1>{coordinator}</h1>
+        </div>
+
+        <Link to={`https://api.whatsapp.com/send?phone=${mobile}`} className=" text-[20px] text-green-500 p-1" > 
+          <WhatsappIcon/>
+        </Link>
+      </div>
+
     </div>
   );
 };
@@ -141,6 +153,8 @@ const EventDetails = () => {
           desc={EventContentDetails.eventDesc}
           rules={EventContentDetails.rules}
           criteria={EventContentDetails.criteria}
+          mobile={EventContentDetails.mobile}
+          coordinator={EventContentDetails.coordinator}
         />
       </div>
     </div>
