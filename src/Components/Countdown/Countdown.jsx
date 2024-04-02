@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import GoogleCalender from './GoogleCalendar';
+import 'add-to-calendar-button';
 
 const Countdown = () => {
   const [days, setDays] = useState(0);
@@ -33,7 +33,7 @@ const Countdown = () => {
 
   return (
     <div>
-      <div className=' flex flex-col justify-evenly items-center mb-20 pb-10'>
+      <div className=' flex flex-col justify-evenly items-center mb-10 pb-10 gap-4'>
         <div className=' w-[80%] text-center'>
           <h1 className=' font-bold text-[60px]'>Mark Your<span className=' bg-gradient-to-r from-blue-500 via-green-500 to-green-500 bg-clip-text text-transparent'> Calendar</span></h1>
           <p>Join us at the forefront of technological advancements and gain valuable insights at our upcoming technical symposium Infest 2K24!</p>
@@ -41,8 +41,8 @@ const Countdown = () => {
 
         <div className=' flex flex-col items-center gap-6'>
 
-          <div className=' flex gap-16'> 
-          
+          <div className=' flex gap-16'>
+
             <div className=' relative'>
               <h1 className=' text-[100px] font-Anton'>{days}</h1>
               <p className=' absolute top-[120px] font-bold text-[30px] bg-gradient-to-r from-blue-500 via-green-500 to-green-500 bg-clip-text text-transparent '>Days</p>
@@ -69,9 +69,23 @@ const Countdown = () => {
 
         </div>
 
-        {/* <div className=' w-screen py-[5%]'>
-        <GoogleCalender/>
-        </div> */}
+        <div className=' mt-4'>
+          <add-to-calendar-button
+            name="Infest 2K24"
+            description="A One day National Level Technical Symposium 2024"
+            startDate="2024-04-23"
+            endDate="2024-04-23"
+            startTime="10:00"
+            endTime="16:00"
+            location="Info Institute of Engineering"
+            options="['Google']"
+            timeZone="Asia/Kolkata"
+            trigger="click"
+            inline
+            listStyle="modal"
+            iCalFileName="Reminder-Event"
+          />
+        </div>
       </div>
 
     </div>

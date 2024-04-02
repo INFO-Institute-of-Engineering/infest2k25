@@ -9,8 +9,8 @@ const App = () => {
     if (footerElement) {
       footerElement.scrollIntoView({ behavior: 'smooth' });
     }
-
   };
+  
   return (
     <div>
       <NavBar scrollToContact={handleScrollToContact}/>

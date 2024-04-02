@@ -1,3 +1,4 @@
+import Coordinators from "../../Components/Coordinators/Coordinators.jsx";
 import Countdown from "../../Components/Countdown/Countdown.jsx";
 import About from "../../Components/Home/About.jsx";
 import Hero from "../../Components/Home/Hero.jsx"
@@ -20,6 +21,7 @@ const Home = () => {
         <About/>
         <HomeDept />
         <Countdown/>
+        <Coordinators/>
       </div>
     </div>
   )

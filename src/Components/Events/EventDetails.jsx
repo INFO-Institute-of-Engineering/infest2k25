@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import TechCardContent from "./TECH/TechCardContent.js";
 import ElectricalCardContent from "./ELECTRICAL/ElectricalCardContent";
 import MbaCardContent from "./MBA/MbaCardContent";
@@ -59,7 +59,7 @@ const EventDetailsComponent = ({ title, desc, img,rules,criteria }) => {
         </div>
 
         <div className=" py-[7px] px-[15px] md:mt-[5%] text-[14px] rounded-[5px] font-bold text-white bg-blue-500 cursor-pointer hover:shadow-xl mr-[10%]">
-          <p>Register Now</p>
+          <Link to={'https://forms.gle/8A84MnzFomM9vJEV7'}>Register Now</Link>
         </div>
       </div>
 
