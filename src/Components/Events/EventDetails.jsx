@@ -4,9 +4,10 @@ import ElectricalCardContent from "./ELECTRICAL/ElectricalCardContent";
 import MbaCardContent from "./MBA/MbaCardContent";
 import ShCardContent from "./SH/ShCardContent";
 import MechCardContent from "./MECH/MechCardContent";
+import { GoDotFill as DotIcon } from "react-icons/go";
 import logo from "../../assets/logo.png";
 
-const EventDetailsComponent = ({ title, desc, img }) => {
+const EventDetailsComponent = ({ title, desc, img,rules,criteria }) => {
   document.documentElement.scrollTop = 0;
   return (
     <div className="md:mt-[20%]  mt-[9%] flex flex-col gap-4  mb-[4%] overflow-x-hidden">
@@ -68,6 +69,33 @@ const EventDetailsComponent = ({ title, desc, img }) => {
           <p className=" text-gray-500 text-[15px] my-[2%] md:my-[4%] w-[90%]">{desc}</p>
         </div>
       </div>
+
+      <div className=" ml-[5%] flex flex-col gap-4 my-[1%]">
+        <h1 className=" font-bold text-[20px]">Rules :</h1>
+        <div className=" flex flex-col gap-4 text-[13px] ml-[3%]">
+        {
+          rules.map((rule)=>(
+            <div key={rule} className="flex flex-row gap-2 items-center">
+              <DotIcon/>{rule}
+            </div>
+          ))
+        }
+        </div>
+      </div>
+
+      <div className=" ml-[5%] flex flex-col gap-4 my-[1%]">
+        <h1 className=" font-bold text-[20px]">Judging Criteria :</h1>
+        <div className=" flex flex-col gap-4 text-[13px] ml-[3%]">
+          {
+            criteria.map((criteria)=>(
+              <div key={criteria} className="flex flex-row gap-2 items-center">
+                <DotIcon/>{criteria}
+              </div>
+            ))
+          }
+        </div>
+      </div>
+
     </div>
   );
 };
@@ -111,6 +139,8 @@ const EventDetails = () => {
           img={EventContentDetails.img}
           title={EventContentDetails.eventTitle}
           desc={EventContentDetails.eventDesc}
+          rules={EventContentDetails.rules}
+          criteria={EventContentDetails.criteria}
         />
       </div>
     </div>
