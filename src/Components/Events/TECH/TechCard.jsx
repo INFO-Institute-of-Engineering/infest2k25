@@ -18,6 +18,7 @@ const TechCard = () => {
   const handleMouseLeave = () => {
     setHovered(null);
   };
+  
 
   return (
     <div className="flex flex-wrap md:flex-col justify-center gap-[7%] w-[80%] mx-auto md:grid-cols-1 cursor-pointer">

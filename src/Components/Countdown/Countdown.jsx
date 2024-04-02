@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import 'add-to-calendar-button';
-// import GoogleCalender from './GoogleCalendar';
 
 const Countdown = () => {
   const [days, setDays] = useState(0);
@@ -87,10 +86,6 @@ const Countdown = () => {
             iCalFileName="Reminder-Event"
           />
         </div>
-
-        {/* <div className=' w-screen py-[5%]'>
-        <GoogleCalender/>
-        </div> */}
       </div>
 
     </div>
