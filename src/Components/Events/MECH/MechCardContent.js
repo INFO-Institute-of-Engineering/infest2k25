@@ -1,7 +1,11 @@
 import {
     paperpresentation,
     projecpresentation,
-    paperbanner
+    paperbanner,
+    cad_master,
+    fun,
+    mr_mechanic,
+    water_rocket
 } from "../../../assets/index.js";
 
 const MechCardContent = [
@@ -49,7 +53,7 @@ const MechCardContent = [
     },
     {
         id:3,
-        img:"",
+        img:cad_master,
         banner:"",
         eventTitle : "CAD Master",
         eventDesc : "For this CAD master students will be provided computer with autocad software installed and they should perform the assigned task.",
@@ -65,13 +69,13 @@ const MechCardContent = [
     },
     {
         id:4,
-        img:"",
+        img:fun,
         eventTitle : "Fun Series",
-        eventDesc : 'he students can have their fun and enjoyment in playing the series of games. Games will be an on spot event. Once you have registered you can participate in fun series games on the symposium date.',
+        eventDesc : 'The students can have their fun and enjoyment in playing the series of games. Games will be an on spot event. Once you have registered you can participate in fun series games on the symposium date.',
     },
     {
         id:5,
-        img:"",
+        img:water_rocket,
         banner:"",
         eventTitle : "Watery Rocketry",
         eventDesc : "Water rocketry is a technical event in which students can use their ideas effectively and produce a pressurized water rocket.",
@@ -86,7 +90,7 @@ const MechCardContent = [
     },
     {
         id:6,
-        img:"",
+        img:mr_mechanic,
         banner:"",
         eventTitle : "Mr.Mechanic",
         eventDesc : "This event is completely based on technical. Students are asked to identify mechanical components or to assemble the components.",
