@@ -1,6 +1,8 @@
 import {
     paperpresentation,
-    paperbanner
+    paperbanner,
+    adzap,
+    best_manager
 } from "../../../assets/index.js";
 
 const MbaCardContent = [
@@ -25,7 +27,7 @@ const MbaCardContent = [
     },
     {
         id:2,
-        img:"",
+        img:best_manager,
         banner:"",
         eventTitle : "Best	Manager",
         eventDesc : "The aim of this event is to identify the student with the traits of a good manager. It also aims to find out how he demonstrates the skills, knowledge and talents of a good manager. It further tests him on how he uses the strategies to solve the problems" ,
@@ -62,7 +64,7 @@ const MbaCardContent = [
     },
     {
         id:4,
-        img:"",
+        img:adzap,
         banner:"",
         eventTitle : "Adzap",
         eventDesc : 'The ADZAP event is a contest in which the team is tested upon the basis of convincing capabilities and selling of some really wacky or nonexistent product.',
