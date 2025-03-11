@@ -8,14 +8,14 @@ const CoordinatorsSlider = ({ items }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex === items.length - 1 ? 0 : prevIndex + 1));
-    }, 4000); // Change slide every 4 seconds
+    }, 50); // Change slide every 4 seconds
 
     return () => clearInterval(interval);
   }, [currentIndex, items.length]);
 
   return (
     <div className="slider relative overflow-hidden border mb-8">
-      <div className="slide-track flex transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * 250}px)` }}>
+      <div className="slide-track flex transition-transform duration-50" style={{ transform: `translateX(-${currentIndex * 250}px)` }}>
         {items.map((content, index) => (
           <div key={index} className="slide w-50">
             <div className="flex flex-col items-center">

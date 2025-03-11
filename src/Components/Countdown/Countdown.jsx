@@ -72,11 +72,11 @@ const Countdown = () => {
         <div className=' mt-4'>
           <add-to-calendar-button
             name="INFEST 2K25"
-            description="A One day National Level Technical Symposium 2024"
-            startDate="2024-04-23"
-            endDate="2024-04-23"
-            startTime="10:00"
-            endTime="16:00"
+            description="A One day National Level Technical Symposium 2025"
+            startDate="2025-03-28"
+            endDate="2025-03-28"
+            startTime="08:00"
+            endTime="16:30"
             location="Info Institute of Engineering"
             options="['Google']"
             timeZone="Asia/Kolkata"
