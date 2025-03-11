@@ -42,7 +42,7 @@ const ElectricalCard = () => {
               </p>
               
               <Link to={`/event/tech/${content.eventTitle}`} className="text-[13px] text-center flex items-center font-bold  w-[60%] p-3 rounded-[2px] bg-white cursor-pointer hover:bg-transparent hover:border border-gray-500 hover:shadow-lg">
-                Register Now&#160;
+                Register  Now&#160;
                 <Register />
               </Link>
             </div>
