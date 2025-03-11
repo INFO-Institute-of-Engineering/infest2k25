@@ -31,7 +31,7 @@ const Hero = ({ scrollToContact }) => {
 
                             <img
                                 src={InfoLogo}
-                                alt="Infest_2k24"
+                                alt="Infest_2k25"
                                 style={NotSelected}
                                 className="mx-auto w-[30%] sm:w-[60%]"
                             />
@@ -39,7 +39,7 @@ const Hero = ({ scrollToContact }) => {
                                 className="text-center my-[1.5%] text-[25px] text-green-500 font-bold"
                                 style={NotSelected}
                             >
-                                23rd April 2024
+                                28th March 2025
                             </h1>
 
                             <div className=" flex flex-row sm:flex-col  justify-evenly items-center mx-auto text-center my-[1%] w-[45%] font-semibold">
