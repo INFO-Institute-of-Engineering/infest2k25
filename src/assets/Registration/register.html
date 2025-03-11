@@ -260,7 +260,6 @@
                     <option value="2">2nd Year</option>
                     <option value="3">3rd Year</option>
                     <option value="4">4th Year</option>
-                    <option value="5">5th Year</option>
                 </select>
             </div>
             
@@ -270,11 +269,13 @@
                     <option value="">Select Department</option>
                     <option value="civil">Civil Engineering</option>
                     <option value="cse">Computer Science and Engineering</option>
+                    <option value="aids">Artificial Intelligence & Data Science</option>
                     <option value="ece">Electronics and Communication Engineering</option>
                     <option value="eee">Electrical and Electronics Engineering</option>
                     <option value="it">Information Technology</option>
                     <option value="mech">Mechanical Engineering</option>
                     <option value="sh">Science & Humanities</option>
+                    <option value="mba">Masters of Business Administration</option>
                 </select>
             </div>
             
@@ -335,13 +336,15 @@
     <script>
         // Department-specific options
         const departmentOptions = {
-            civil: ["Structural Engineering", "Transportation Engineering", "Environmental Engineering", "Geotechnical Engineering"],
-            cse: ["Artificial Intelligence", "Machine Learning", "Web Development", "Cybersecurity", "Cloud Computing", "Data Science"],
-            ece: ["VLSI Design", "Embedded Systems", "Communication Systems", "Signal Processing", "IoT"],
-            eee: ["Power Systems", "Control Systems", "Power Electronics", "Renewable Energy", "Electric Vehicles"],
-            it: ["Software Development", "Network Security", "Database Management", "Cloud Computing", "Big Data"],
-            mech: ["Thermal Engineering", "Design Engineering", "Manufacturing", "Automation & Robotics", "CAD/CAM"],
-            sh: ["Mathematics", "Physics", "Chemistry", "English", "Economics"]
+            civil: ["Project Presentation", "Paper Presentstion", "CAD Master", "Fun Series", "Watery Rocketry", "Mr.Mechanic"],
+            cse: ["Paper Presentstion", "Project Presentation", "Google Hunt", "Crash Your Codes", "Web Master", "Gaming"],
+            aids: ["Paper Presentstion", "Project Presentation", "Google Hunt", "Crash Your Codes", "Web Master", "Gaming"],
+            ece: ["Paper Presentstion", "Project Presentation", "Tech Connection", "Circuit Debugging", "Technical Quiz", "Treasure Hunt"],
+            eee: ["Paper Presentstion", "Project Presentation", "Tech Connection", "Circuit Debugging", "Technical Quiz", "Treasure Hunt"],
+            it: ["Paper Presentstion", "Project Presentation", "Google Hunt", "Crash Your Codes", "Web Master", "Gaming"],
+            mech: ["Project Presentation", "Paper Presentstion", "CAD Master", "Fun Series", "Watery Rocketry", "Mr.Mechanic"],
+            sh: ["Paper Presentstion", "Fun Quiz", "Technical Debate", "Pencil Sketch & Painting", "Math Puzzles", "Karaoke Singing", "Drama & Mime"],
+            mba: ["Paper Presentstion", "Best Manager", "Business Quiz", "ADZAP", "Corporate Walk", "Corporate Stall", "Treasure Hunt"],
         };
 
         // Load department-specific options as checkboxes
