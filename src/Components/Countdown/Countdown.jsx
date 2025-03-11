@@ -7,7 +7,7 @@ const Countdown = () => {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
-  const targetDate = new Date('2024-04-23T00:00:00');
+  const targetDate = new Date('2025-03-28T08:00:00');
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -36,7 +36,7 @@ const Countdown = () => {
       <div className=' flex flex-col justify-evenly items-center mb-10 pb-10 gap-4'>
         <div className=' w-[80%] text-center'>
           <h1 className=' font-bold text-[60px]'>Mark Your<span className=' bg-gradient-to-r from-blue-500 via-green-500 to-green-500 bg-clip-text text-transparent'> Calendar</span></h1>
-          <p>Join us at the forefront of technological advancements and gain valuable insights at our upcoming technical symposium Infest 2K24!</p>
+          <p>Join us at the forefront of technological advancements and gain valuable insights at our upcoming technical symposium INFEST 2K25!</p>
         </div>
 
         <div className=' flex flex-col items-center gap-6'>
@@ -71,12 +71,12 @@ const Countdown = () => {
 
         <div className=' mt-4'>
           <add-to-calendar-button
-            name="Infest 2K24"
-            description="A One day National Level Technical Symposium 2024"
-            startDate="2024-04-23"
-            endDate="2024-04-23"
-            startTime="10:00"
-            endTime="16:00"
+            name="INFEST 2K25"
+            description="A One day National Level Technical Symposium 2025"
+            startDate="2025-03-28"
+            endDate="2025-03-28"
+            startTime="08:00"
+            endTime="16:30"
             location="Info Institute of Engineering"
             options="['Google']"
             timeZone="Asia/Kolkata"

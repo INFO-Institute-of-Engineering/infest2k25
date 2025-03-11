@@ -8,7 +8,7 @@ const MbaCardContent = [
     {
         id:1,
         img:paperpresentation,
-        coordinator:"",
+        coordinator:"Mr.S.Kanagaraj-AP/MBA",
         mobile:"",
         eventTitle : "Paper Presentation",
         eventDesc : "Paper presentation is an event where the participants are required to make a paper about a certain topic and then present it in front of a jury. ",
@@ -28,7 +28,7 @@ const MbaCardContent = [
     {
         id:2,
         img:best_manager,
-        coordinator:"",
+        coordinator:"Dr.M.Yasotha-HOD/MBA",
         mobile:"",
         eventTitle : "Best	Manager",
         eventDesc : "The aim of this event is to identify the student with the traits of a good manager. It also aims to find out how he demonstrates the skills, knowledge and talents of a good manager. It further tests him on how he uses the strategies to solve the problems" ,
@@ -67,7 +67,7 @@ const MbaCardContent = [
     {
         id:4,
         img:adzap,
-        coordinator:"",
+        coordinator:"Ms.B.Nancy-AP/MBA",
         mobile:"",
         eventTitle : "Adzap",
         eventDesc : 'The ADZAP event is a contest in which the team is tested upon the basis of convincing capabilities and selling of some really wacky or nonexistent product.',
@@ -89,7 +89,7 @@ const MbaCardContent = [
     {
         id:5,
         img:"",
-        coordinator:"",
+        coordinator:"Ms.K.Padmapriya-AP/MBA",
         mobile:"",
         eventTitle : "Corporate	Walk",
         eventDesc : "A well-tied tie is the first serious step in life, so tuck in your best shirt and suit up because it’s time to show off in corporate style.",
@@ -107,7 +107,7 @@ const MbaCardContent = [
     {
         id:7,
         img:"",
-        coordinator:"",
+        coordinator:"Mr.S.Kanagaraj-AP/MBA",
         mobile:"",
         eventTitle : "Treasure Hunt ",
         eventDesc : "It is a game in which each person or team attempts to be first in finding something that has been given, using written directions or clues.",
