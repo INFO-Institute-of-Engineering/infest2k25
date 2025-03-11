@@ -49,7 +49,8 @@
         h1 {
             text-align: center;
             color: white;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
+            font-family: 'Trebuchet MS';
         }
 
         .form-group {
@@ -89,6 +90,34 @@
 
         .hidden {
             display: none;
+        }
+
+        /* Checkbox styling */
+        .checkbox-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            padding: 15px;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .checkbox-item input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .checkbox-item label {
+            margin-bottom: 0;
+            color: #333;
+            font-weight: normal;
         }
 
         .payment-options {
@@ -182,12 +211,16 @@
             .payment-options {
                 flex-direction: column;
             }
+
+            .checkbox-container {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <img src="/assets/logo.png" alt="Event Logo" class="logo">
+        <img src="/src/assets/logo.png" alt="Event Logo" class="logo">
     </div>
 
     <div class="container">
@@ -245,12 +278,13 @@
                 </select>
             </div>
             
-            <!-- Department-specific options will appear here -->
+            <!-- Department-specific options as checkboxes -->
             <div id="dept-specific-options" class="form-group hidden">
-                <label for="dept-option">Select Option *</label>
-                <select id="dept-option" name="dept-option" required>
-                    <option value="">Select Option</option>
-                </select>
+                <label>Select Options * (Choose 2-3 options)</label>
+                <div id="dept-options-container" class="checkbox-container">
+                    <!-- Checkboxes will be added here dynamically -->
+                </div>
+                <input type="hidden" id="selected-dept-options" name="selected-dept-options">
             </div>
             
             <div class="form-group">
@@ -310,22 +344,38 @@
             sh: ["Mathematics", "Physics", "Chemistry", "English", "Economics"]
         };
 
-        // Load department-specific options
+        // Load department-specific options as checkboxes
         document.getElementById('department').addEventListener('change', function() {
             const deptValue = this.value;
-            const deptOptionsSelect = document.getElementById('dept-option');
+            const deptOptionsContainer = document.getElementById('dept-options-container');
             const deptOptionsDiv = document.getElementById('dept-specific-options');
             
             if (deptValue && departmentOptions[deptValue]) {
                 // Clear previous options
-                deptOptionsSelect.innerHTML = '<option value="">Select Option</option>';
+                deptOptionsContainer.innerHTML = '';
                 
-                // Add new options
+                // Add new options as checkboxes
                 departmentOptions[deptValue].forEach(option => {
-                    const optElement = document.createElement('option');
-                    optElement.value = option.toLowerCase().replace(/\s+/g, '-');
-                    optElement.textContent = option;
-                    deptOptionsSelect.appendChild(optElement);
+                    const optionId = option.toLowerCase().replace(/\s+/g, '-');
+                    
+                    const checkboxItem = document.createElement('div');
+                    checkboxItem.className = 'checkbox-item';
+                    
+                    const checkbox = document.createElement('input');
+                    checkbox.type = 'checkbox';
+                    checkbox.id = optionId;
+                    checkbox.value = option;
+                    checkbox.name = 'dept-options';
+                    checkbox.addEventListener('change', updateSelectedOptions);
+                    
+                    const label = document.createElement('label');
+                    label.htmlFor = optionId;
+                    label.textContent = option;
+                    
+                    checkboxItem.appendChild(checkbox);
+                    checkboxItem.appendChild(label);
+                    
+                    deptOptionsContainer.appendChild(checkboxItem);
                 });
                 
                 deptOptionsDiv.classList.remove('hidden');
@@ -333,6 +383,22 @@
                 deptOptionsDiv.classList.add('hidden');
             }
         });
+
+        // Update selected options
+        function updateSelectedOptions() {
+            const checkboxes = document.querySelectorAll('input[name="dept-options"]:checked');
+            const selectedOptions = Array.from(checkboxes).map(cb => cb.value);
+            
+            // Limit to maximum 3 selections
+            if (checkboxes.length > 3) {
+                alert('You can select a maximum of 3 options');
+                this.checked = false;
+                return;
+            }
+            
+            // Store selected options in hidden input
+            document.getElementById('selected-dept-options').value = JSON.stringify(selectedOptions);
+        }
 
         // Handle payment mode selection
         function selectPaymentMode(element) {
@@ -367,7 +433,7 @@
                 college: document.getElementById('college').value,
                 year: document.getElementById('year').value,
                 department: document.getElementById('department').value,
-                deptOption: document.getElementById('dept-option').value,
+                deptOptions: JSON.parse(document.getElementById('selected-dept-options').value || '[]'),
                 projectLink: document.getElementById('project-link').value,
                 paymentMode: document.getElementById('payment-mode').value,
             };
@@ -375,8 +441,14 @@
             // Basic validation
             if (!formData.name || !formData.email || !formData.phone || !formData.whatsapp || 
                 !formData.college || !formData.year || !formData.department || 
-                (formData.department && !formData.deptOption) || !formData.projectLink || !formData.paymentMode) {
+                (formData.deptOptions.length < 1) || !formData.projectLink || !formData.paymentMode) {
                 alert('Please fill all required fields');
+                return;
+            }
+            
+            // Check if at least 1 and at most 3 department options are selected
+            if (formData.deptOptions.length < 1 || formData.deptOptions.length > 3) {
+                alert('Please select between 1 and 3 department options');
                 return;
             }
             
