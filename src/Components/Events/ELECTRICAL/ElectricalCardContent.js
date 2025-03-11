@@ -20,11 +20,11 @@ const ElectricalCardContent = [
     },
     {
         id:2,
-        img:"",
+        img:t_connection,
         coordinator:"",
         mobile:"",
         eventTitle : "Tech Connection",
-        eventDesc : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nesciunt ipsa officiis suscipit quia exercitationem laborum excepturi nostrum officia et incidunt molestiae, rerum possimus expedita? Sit quaerat aliquam minus in.",
+        eventDesc : " Tech Connection challenges participants to showcase their innovative tech solutions, pushing the boundaries of creativity and problem-solving. It provides a platform for tech enthusiasts to connect, collaborate, and demonstrate their skills in real-world applications",
         rules:[
            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita molestias"
         ],
@@ -34,11 +34,11 @@ const ElectricalCardContent = [
     },
     {
         id:3,
-        img:"",
+        img:circuit,
         coordinator:"",
         mobile:"",
         eventTitle : "Circuit Debugging",
-        eventDesc : '"Google Hunt" is a fast-paced competition with two rounds: "Google Search Challenge" and "Google Feats." It is all about being fast and precise with Google search skills',
+        eventDesc : "Circuit Debugging  tests participants ability to troubleshoot and fix faulty circuits, requiring keen problem-solving skills and technical knowledge",
         rules:[
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita molestias"
         ],
@@ -48,11 +48,11 @@ const ElectricalCardContent = [
     },
     {
         id:4,
-        img:"",
+        img:techquiz,
         coordinator:"",
         mobile:"",
         eventTitle : "Technical	Quiz",
-        eventDesc : "The CRASH YOUR CODE event is a coding contest where the participants need to solve the MCQs and Debugging and Problem Solving questions using any programming languages.",
+        eventDesc : " Technical Quiz is designed for ECE and EEE departments is designed to test participants knowledge in electronics, electrical engineering, and related technical fields.",
         rules:[
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita molestias"
         ],
@@ -62,11 +62,11 @@ const ElectricalCardContent = [
     },
     {
         id:5,
-        img:"",
+        img:t_hunt,
         coordinator:"",
         mobile:"",
         eventTitle : "Treasure Hunt",
-        eventDesc : "Web Master is an event where the participants have to express their web development skills by creating a website with given requirements.",
+        eventDesc : "Treasure Hunt competition is an exciting and interactive event where participants solve clues and complete challenges to find hidden treasures.",
         rules:[
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita molestias"
         ],

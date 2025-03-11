@@ -44,17 +44,17 @@ const EventDetailsComponent = ({ title, desc, img,rules,criteria,mobile,coordina
           <div className=" flex flex-col gap-3 md:gap-4 text-[12px]  text-gray-500">
             <div className=" flex flex-row gap-2">
               <p className=" uppercase font-bold ">starts on :</p>
-              <p>April 23,2024 9:00 AM (IST)</p>
+              <p>March 28,2025 9:00 AM (IST)</p>
             </div>
 
             <div className=" flex flex-row gap-2">
               <p className=" uppercase font-bold ">ends on :</p>
-              <p>April 23,2024 4:00 PM (IST)</p>
+              <p>March 28,2025 4:00 PM (IST)</p>
             </div>
 
             <div className=" flex flex-row gap-2">
               <p className=" uppercase font-bold ">venue :</p>
-              <p>Info Institute of Engineering</p>
+              <p>INFO Institute of Engineering</p>
             </div>
           </div>
         </div>
