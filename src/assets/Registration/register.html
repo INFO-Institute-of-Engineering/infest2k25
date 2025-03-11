@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="/src/assets/Registration/styles.css">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="https://via.placeholder.com/150" alt="Event Logo" class="event-logo">
+        <div class="registration-container">
+            <h2>Event Registration</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email ID:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="whatsapp">WhatsApp Number:</label>
+                    <input type="tel" id="whatsapp" name="whatsapp" required>
+                </div>
+                <div class="form-group">
+                    <label for="college">Name of the College:</label>
+                    <input type="text" id="college" name="college" required>
+                </div>
+                <div class="form-group">
+                    <label for="year">Year of Study:</label>
+                    <input type="number" id="year" name="year" min="1" max="4" required>
+                </div>
+                <div class="form-group">
+                    <label for="department">Department Name:</label>
+                    <select id="department" name="department" required onchange="filterOptions()">
+                        <option value="">Select Department</option>
+                        <option value="Civil Engineering">Civil Engineering</option>
+                        <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+                        <option value="Electronics and Communication Engineering">Electronics and Communication Engineering</option>
+                        <option value="Electrical and Electronics Engineering">Electrical and Electronics Engineering</option>
+                        <option value="Information Technology">Information Technology</option>
+                        <option value="Mechanical Engineering">Mechanical Engineering</option>
+                        <option value="Science & Humanities">Science & Humanities</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="projectLink">Project/Paper Link (Google Drive):</label>
+                    <input type="url" id="projectLink" name="projectLink" placeholder="Paste your Google Drive link" required>
+                </div>
+                <div class="form-group">
+                    <label for="paymentMode">Mode of Payment:</label>
+                    <select id="paymentMode" name="paymentMode" required onchange="handlePaymentMode()">
+                        <option value="">Select Mode</option>
+                        <option value="online">Online</option>
+                        <option value="offline">Offline</option>
+                    </select>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+            <div id="ticketNumber" class="ticket" style="display: none;">
+                <h3>Your Ticket Number: <span id="ticketValue"></span></h3>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
