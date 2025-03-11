@@ -14,7 +14,7 @@ const TechCardContent = [
         coordinator:"",
         mobile:"",
         eventTitle : "Paper Presentation",
-        eventDesc : "Paper presentation is an event where the participants are required to make a paper about a certain topic and then present it in front of a jury. ",
+        eventDesc : "A paper presentation is a formal way of sharing research findings, innovative ideas, or case studies with an audience in academic, professional, or technical settings. It involves presenting a well-researched paper through a structured oral talk, often supported by slides or visual aids. The goal is to communicate key insights effectively, engage the audience, and encourage discussions. ",
         rules:[
             "Maximum 4 members per team.",
             "The paper topics can be chosen by your own.",
@@ -39,7 +39,7 @@ const TechCardContent = [
         coordinator:"",
         mobile:"",
         eventTitle : "Project Presentation",
-        eventDesc : "Project Presentation is an event where the participants are required to make a project about a certain topic and present infront of a jury.",
+        eventDesc : "A project presentation is a structured way of showcasing a project’s objectives, progress, outcomes, and impact to an audience. It is commonly used in academic, business, and technical settings to communicate ideas, problem-solving approaches, and innovations. The presentation typically includes visual aids, such as slides, charts, and prototypes, to enhance understanding and engagement.",
         rules:[
             "Abstract should be sent 2 days before the event",
             "Maximum 4 members per team .",
@@ -85,7 +85,7 @@ const TechCardContent = [
         coordinator:"Bala santhosh P",
         mobile:"+918870702519",
         eventTitle : "Crash Your Code",
-        eventDesc : "The CRASH YOUR CODE event is a coding contest where the participants need to solve the MCQs and Debugging and Problem Solving questions using any programming languages.",
+        eventDesc : "Crash Your Code is an exciting coding challenge or debugging competition where participants intentionally test, break, or improve their code by identifying vulnerabilities, errors, or inefficiencies. It is designed to enhance problem-solving skills, debugging expertise, and coding efficiency in a fun and competitive environment.     ",
         rules:[
             "No. of Rounds : 2",
             "Round 1 is MCQ and Round 2 is Debugging and Problem Solving.",
